@@ -4,7 +4,7 @@ Use MonsGeek Driver to edit your keyboard settings without manually disabling th
 
 This project also fixes MonsGeek's **“Searching for device…”** screen for the specific experimental **ID2381 V302 F6PK** firmware and reduces two handoff delays.
 
-**This is an experimental compatibility fix for an already-patched keyboard. It does not install firmware or add live per-key support to a stock keyboard.** It is not an official MonsGeek, SignalRGB, or SRGBmods release.
+**The desktop plugin requires V302 F6PK firmware. Stock model-2381 owners can follow the separate [firmware installation guide](firmware/README.md) first.** It is not an official MonsGeek, SignalRGB, or SRGBmods release.
 
 ## Compatibility
 
@@ -20,7 +20,7 @@ This project also fixes MonsGeek's **“Searching for device…”** screen for 
 
 Model **2307**, other FUN60 variants, stock V302/V304, and other firmware are not supported by this lighting plugin. Matching the product name or USB ID alone is not enough. The plugin verifies model 2381, version 0x0302, and the F6PK marker before sending RGB frames.
 
-The supplied files do not flash, reset, or calibrate your keyboard. If you have stock firmware, stop here: this package is not a complete firmware-conversion guide. Firmware images and a flasher are deliberately not included.
+The desktop installer does not flash firmware. The optional [firmware folder](firmware/README.md) contains the exact tested F6PK image, stock V302 rollback, and a separate flasher with explicit activation. Flashing can reset settings; read that guide before using it.
 
 ## What is included
 
@@ -29,13 +29,13 @@ The supplied files do not flash, reset, or calibrate your keyboard. If you have 
 - `tests/`: offline checks for the plugin and patcher.
 - `TECHNICAL.md`: protocol, compatibility fix, timing, and validation details.
 
-No vendor app bundle, firmware binary, personal device settings, USB serial number, or legacy sharing token is distributed here.
+No vendor app bundle, personal device settings, USB serial number, or legacy sharing token is distributed here. The optional firmware folder includes the tested binary and stock recovery image.
 
 ## Installation
 
 ### 1. Check prerequisites and close the apps
 
-1. Confirm you already have the specific F6PK firmware listed above. A stock keyboard will not work with this plugin.
+1. Confirm you have F6PK firmware. If still on stock V302/V304 on verified model 2381, complete the [firmware guide](firmware/README.md) first.
 2. Fully quit SignalRGB and MonsGeek from their tray menus. Closing a window may only minimize it.
 3. Download this repository using **Code → Download ZIP**, then extract it.
 4. Install Python 3 from [python.org](https://www.python.org/downloads/windows/) if it is not already available. The patcher uses only Python's standard library.

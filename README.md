@@ -2,7 +2,7 @@
 
 Fix MonsGeek getting stuck on **“Searching for device…”** and switch automatically between MonsGeek settings and SignalRGB lighting.
 
-> **Check this first:** You need a FUN60 Ultra **model 2381** that already has the custom **V302 F6PK firmware**. A normal, unmodified keyboard will not work with this download. This guide does not flash firmware. If you're unsure, check with whoever installed your firmware before continuing.
+> **Check this first:** You need a FUN60 Ultra **model 2381** that already has the custom **V302 F6PK firmware**. If you are still on stock V302/V304, use the [firmware setup guide](firmware/README.md) first. It includes the exact flashed image and stock V302 recovery. Do not use it on model 2307 or an unidentified keyboard.
 
 ## 1. Download and unzip
 
@@ -58,7 +58,7 @@ The installer checks compatibility before changing anything and makes a backup a
 | Can't find the MonsGeek app file / unsupported bundle | Your app location or version may differ. See [advanced installation](HELP.md#3-patch-monsgeek-detection). |
 | MonsGeek is still searching | Fully quit both apps, then reopen them. See [detection help](HELP.md#monsgeek-is-still-searching) if it continues. |
 | Lighting stays paused | Quit MonsGeek from the tray, not just its window. Keep the keyboard enabled in SignalRGB. |
-| Missing F6PK marker | The required custom firmware isn't detected. This download cannot add it. |
+| Missing F6PK marker | See the [model-2381 firmware guide](firmware/README.md). Check your exact model before flashing. |
 
 ## Need to undo it?
 

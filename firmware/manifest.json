@@ -1,0 +1,14 @@
+{
+  "status": "Experimental; flashed on one model-2381 keyboard; typing and live lighting confirmed. Not validated on other units.",
+  "model": 2381,
+  "base_version": "0302",
+  "base_sha256": "c3204d50a60afc7a0f573638c440cd1762e78cd4c25462aa39a6927d0b5481f3",
+  "patched_sha256": "6766c13b834f74ec3b736f3578a405598f45c6cdee1bf595a7b9ca7b3175e555",
+  "hook": "0x8012388",
+  "cave": "0x801e700",
+  "cave_size": 124,
+  "identity": "0x801e800",
+  "identity_size": 18,
+  "protocol": "0C, selector FF, pages 0..6, final length 42, final apply 2; mode 13 required",
+  "discovery": "GET_INFOR payload bytes 3..6 ASCII F6PK"
+}

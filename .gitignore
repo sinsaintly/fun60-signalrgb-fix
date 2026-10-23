@@ -5,3 +5,7 @@ __pycache__/
 *.fun60-backup-*
 *.fun60-tmp
 node_modules/
+
+!firmware/ID2381-V302-F6PK.bin
+!firmware/stock-ID2381-V302.bin
+firmware/flash-*-log.json
