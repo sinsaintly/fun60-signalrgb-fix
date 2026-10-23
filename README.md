@@ -1,6 +1,8 @@
 # FUN60 Ultra — easy setup
 
-Fix MonsGeek getting stuck on **“Searching for device…”** and switch automatically between MonsGeek settings and SignalRGB lighting.
+**Add your MonsGeek FUN60 Ultra to SignalRGB—even if it wasn’t detected before.** The included custom plugin adds support for the wired **model 2381** keyboard with **V302 F6PK firmware**, including live per-key lighting.
+
+This package also fixes MonsGeek getting stuck on **“Searching for device…”** and switches automatically between MonsGeek settings and SignalRGB lighting.
 
 > **Check this first:** You need a FUN60 Ultra **model 2381** that already has the custom **V302 F6PK firmware**. If you are still on stock V302/V304, use the [firmware setup guide](firmware/README.md) first. It includes the exact flashed image and stock V302 recovery. Do not use it on model 2307 or an unidentified keyboard.
 
@@ -43,7 +45,7 @@ The installer checks compatibility before changing anything and makes a backup a
 
 ## 5. Open your apps
 
-1. Open **SignalRGB**. Leave the FUN60 enabled and check that its lights follow your effect.
+1. Open **SignalRGB → Devices**. Your keyboard should appear as **MonsGeek FUN60 Ultra (Live Per-Key)**, even if it wasn’t listed before installing the plugin. Leave it enabled and check that its lights follow your effect.
 2. Open **MonsGeek**. It should show **FUN60 Ultra**. Click **Retrieve Current Setting** before editing your keyboard settings.
 3. When finished, **fully exit MonsGeek from the tray**. SignalRGB should resume lighting automatically.
 
@@ -56,6 +58,7 @@ The installer checks compatibility before changing anything and makes a backup a
 | `py` is not recognized | Install Python 3 and open a new PowerShell window. If Python is already installed, try `python .\patch_monsgeek.py --apply`. |
 | Can't find `patch_monsgeek.py` | Open PowerShell from the extracted folder that contains that file, as shown in step 4. |
 | Can't find the MonsGeek app file / unsupported bundle | Your app location or version may differ. See [advanced installation](HELP.md#3-patch-monsgeek-detection). |
+| FUN60 is missing from SignalRGB | Connect the supported keyboard by USB, check that the plugin is in your actual Documents → WhirlwindFX → Plugins folder, then fully quit and restart SignalRGB. |
 | MonsGeek is still searching | Fully quit both apps, then reopen them. See [detection help](HELP.md#monsgeek-is-still-searching) if it continues. |
 | Lighting stays paused | Quit MonsGeek from the tray, not just its window. Keep the keyboard enabled in SignalRGB. |
 | Missing F6PK marker | See the [model-2381 firmware guide](firmware/README.md). Check your exact model before flashing. |
