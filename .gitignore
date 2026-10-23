@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.bin
+*.bak
+*.fun60-backup-*
+*.fun60-tmp
+node_modules/
